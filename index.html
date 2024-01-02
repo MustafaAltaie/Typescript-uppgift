@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 20px;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 500px;
+        }
+        input{
+            border: solid 1px #111;
+        }
+        button{
+            background-color: #05a;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover{
+            background-color: #06b;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <input type="number" id="pText" placeholder="P">
+        <input type="number" id="rText" placeholder="R">
+        <input type="number" id="nText" placeholder="N">
+        <button id="resultBtn">Get Result</button>
+        <h1 id="mText"></h1>
+    </main>
+    <script src="dist/index.js"></script>
+</body>
+</html>
